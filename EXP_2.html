@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Government Scholarship Application</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            color: #002244;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 8px;
+        }
+        h1 {
+            color: #004080;
+        }
+        fieldset {
+            border: 1px solid #004080;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+            color: #004080;
+        }
+    </style>
+</head>
+<body>
+    <h1>Government Scholarship Application Form</h1>
+    <p>Please fill out the form below to apply for the government-funded student scholarship program.</p>
+
+    <form action="#" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td><label for="fname">Full Name:</label></td>
+                    <td><input type="text" id="fname" name="fullname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile Number:</label></td>
+                    <td><input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <select id="gender" name="gender" required>
+                            <option value="">--Select--</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Details</legend>
+            <table>
+                <tr>
+                    <td><label for="course">Course Applied For:</label></td>
+                    <td>
+                        <select id="course" name="course">
+                            <optgroup label="Undergraduate">
+                                <option value="bsc">B.Sc</option>
+                                <option value="ba">B.A</option>
+                                <option value="bcom">B.Com</option>
+                            </optgroup>
+                            <optgroup label="Postgraduate">
+                                <option value="msc">M.Sc</option>
+                                <option value="ma">M.A</option>
+                                <option value="mcom">M.Com</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="percentage">12th Grade %:</label></td>
+                    <td><input type="range" id="percentage" name="percentage" min="40" max="100" step="1" oninput="output.value = percentage.value"><output id="output">70</output>%</td>
+                </tr>
+                <tr>
+                    <td><label for="doc">Upload Documents (PDF):</label></td>
+                    <td><input type="file" id="doc" name="documents" accept=".pdf" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Details</legend>
+            <table>
+                <tr>
+                    <td><label for="color">Preferred Color Scheme:</label></td>
+                    <td><input type="color" id="color" name="color"></td>
+                </tr>
+                <tr>
+                    <td><label for="url">LinkedIn Profile (Optional):</label></td>
+                    <td><input type="url" id="url" name="linkedin"></td>
+                </tr>
+                <tr>
+                    <td><label for="comments">Additional Info:</label></td>
+                    <td><textarea id="comments" name="comments" rows="4" cols="40" placeholder="Mention if you belong to any reserved category, or other important notes."></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Hidden field example -->
+        <input type="hidden" name="formID" value="govScholar2025">
+
+        <!-- Clickable image to redirect -->
+        <p>Click the image below to visit the scholarship guidelines:</p>
+        <a href="https://scholarships.gov.in/" target="_blank">
+            <img src="https://scholarships.gov.in/public/assets2425/images/nsp-logo.svg" alt="NSP" width="200">
+        </a>
+
+        <br><br>
+
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset Form">
+    </form>
+
+    <hr>
+
+    <!-- Multimedia Section -->
+    <h2>Instructional Video</h2>
+    <video width="400" height="300" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Audio Guidelines</h2>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <h2>Our Office Location</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2798921796!2d77.04417501619033!3d28.527582000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce378a843f29b%3A0x8e5f1e7c6f3a181f!2sNational%20Scholarship%20Portal!5e0!3m2!1sen!2sin!4v1611314138236!5m2!1sen!2sin"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <!-- HTML Comment -->
+    <!-- This form was designed for academic purpose to demonstrate HTML5 form and multimedia tags -->
+</body>
+</html>
